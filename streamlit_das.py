@@ -3,19 +3,14 @@ import pickle
 import re
 import numpy as np
 from spellchecker import SpellChecker
-
-# ==============================
 # 1. LOAD MODEL + VECTORIZER
-# ==============================
 MODEL_PATH = "resume_analy.pkl"
 VEC_PATH = "tfidf_vectorizer.pkl"
 
 model = pickle.load(open(MODEL_PATH, "rb"))
 vectorizer = pickle.load(open(VEC_PATH, "rb"))
 
-# ==============================
 # 2. SAME PREPROCESSING USED IN TRAINING
-# ==============================
 spell = SpellChecker()
 spell.word_frequency.load_words([
     "sql","python","java","excel","ml","ai","r","c++","c#","bsc","msc","django",
