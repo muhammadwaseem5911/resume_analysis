@@ -1,0 +1,5 @@
+*.venv
+*.ipynb
+*clean_file.py
+*streamlit_das.py
+*.csv
