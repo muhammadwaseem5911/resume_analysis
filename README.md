@@ -35,7 +35,7 @@ Same preprocessing used during model training.
 The Flask app is for development only. For production, use a WSGI server (e.g., Gunicorn).
 Docker image includes only the API and trained model, not raw CSVs or notebooks.
 Confidence score is available if the model supports decision_function.
-\
+
 
 ## **License**
 MIT License
